@@ -1,0 +1,750 @@
+body{
+    font-family: "Raleway", sans-serif;
+}
+.nav-wrapper{
+    display: grid;
+    grid-template-columns: 3fr auto;/*przesuniecie menu do prawej*/
+    padding: 5px 20px;
+}
+
+.nav-wrapper ul li{
+    display: inline;
+    list-style-type: none;
+}
+.nav-wrapper a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+.nav-wrapper a:hover{
+    cursor: pointer;
+    color: rgb(180, 226, 128);
+}
+.nav-items{
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-items{
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 40px;
+}
+.contact{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.burger-icon{
+    display: none;
+}
+/*podkreślenie nazwy pór roku*/
+.highlighted{
+    position: relative;
+    padding: 7px 0;
+    text-decoration: none;
+}
+.highlighted::before {
+   content: '';
+   display: block;
+   position: absolute;
+   bottom: 1px;
+   left: 0;
+   height: 2px;
+   width: 100%;
+   background-color: #b1e675;
+}
+
+.main-wrapper{
+    max-width: 1400px;
+    margin: auto;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "titleOffer titleOffer titleOffer"
+        "featuredSub featuredSub featuredSub"
+        "contentMain contentMain contentMain"
+        "headingMaps headingMaps headingMaps" 
+        "contentMaps contentMaps contentMaps"
+        "clientsOpinion clientsOpinion clientsOpinion"
+}
+.featured{
+    grid-area: featuredMain;
+    min-height: 43vw;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
+    border-box, url(/img/camper.jpg) no-repeat center center;
+    background-size: cover;
+
+    display: grid;
+    align-content: center;
+
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+   
+    position: relative;
+
+}
+.featured #hero-date{
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+.featured h1{
+    font-size: 36px;
+    max-width: 650px;
+}
+/*popularne oferty*/
+.offer-title{
+    grid-area: titleOffer;
+    position: relative;
+}
+.title{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.btn-more-offers{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.sub-all{
+    grid-area: featuredSub;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    min-height: 16vw;
+
+    grid-gap: 90px;
+    color: #fff;
+
+}
+.sub-featured{
+    box-shadow: 0 0 4px rgba(0,0,0,.25);
+}
+.sub-featured h3{
+    margin-top: 0;
+}
+.sub1{
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
+    border-box, url(/img/Egypt.jpg) no-repeat center center;
+    background-size: 100% 100%;
+
+    min-height: 16vw;
+    margin-top: 15px;
+}
+.sub2{
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
+    border-box, url(/img/eiffel-tower.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    min-height: 16vw;
+    margin-top: 15px;
+}
+.sub3{
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
+    border-box, url(/img/opera-house.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    min-height: 16vw;
+    margin-top: 15px;
+}
+/*napis na zdjęciu*/
+.offers h3{
+    padding-top: 5px;
+    text-align: center;
+}
+.name-star{
+    display: flex;
+    
+    list-style-type: none;
+    margin: 0;
+    padding-top: 0.3rem;
+    padding-left: 0.9rem;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    position: relative;
+
+} 
+.name{
+    color: #333;
+}
+.name span{
+    font-weight: bold;
+    color: #333;
+}
+.place-star{
+    display: flex;
+
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.place-star-australia{
+    padding-left: 2rem;
+    margin: 1px; 
+}
+.star{
+    margin: 4px;
+}
+.offers img{
+    width: 26vw; 
+    height: 17.6vw;
+} 
+.img-desc{
+    padding: 0.4rem;
+    background-color: #ffeee3;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+.place-description-australia{
+    background-color: #ffeee3;
+    font-size: 13px;
+}
+.p-frame-btn{
+    padding: 0.4rem;
+    text-align: center;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(155, 155, 155, 0.2))
+    border-box;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    background-color: #f3ffd2;
+}
+.border-btn{
+ 
+    border: 2px solid #65bde8;
+    background-color: white;
+    color: black;
+    
+    font-family: var(--raleway);
+    font-weight: 800;
+    font-size: 14px;
+
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    cursor: pointer;
+}
+.border-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-content{
+    grid-area: contentMain;
+
+    background-color: rgba(255,255,255,.35);
+    color: #444;
+    line-height: 1.5rem;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.main-content h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.left-content{
+    display: grid;
+    align-content: center;
+}
+.main-sidebar{
+    color: #444;
+}
+.email-digest-subscription p{
+    text-align: center;
+}
+.heading-maps{
+    grid-area: headingMaps;
+    text-align: center;
+    font-size: 20px;
+}
+.heading-maps span{
+    color: rgb(240, 75, 103);
+    font-size: 24px;
+}
+
+.main-maps{
+    grid-area: contentMaps;
+
+    min-height: 30vw;
+    
+    background: url(/img/continents.png) no-repeat center center;
+    background-size: 100% 100%;
+
+}
+.clients-opinion{
+    grid-area: clientsOpinion;
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    min-height: 20vw;
+
+    grid-gap: 10px;
+  
+}
+.clients-opinion h3{
+    text-align: center;
+    grid-column: 1/4;
+    color: #656565;
+    font-size: 24px;
+}
+/* OPINIA KLIENTA */
+.client-opinion{
+    width: 31%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -14rem;
+    color: #656565;
+}
+
+.info-all{
+    text-align: center;
+    background-color: #ffeee3;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+    padding: 20px 0 20px 0;
+}
+/* contact-us */
+
+.contact-us{
+    
+    min-height: 47vw;
+    
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
+    border-box, url(/img/sea-1337565_1920.jpg) no-repeat center center;
+    background-size: cover;
+
+    text-align: center;
+  /* wysrodkowanie tekstu na calym rectangle */
+    display: grid;
+    align-content: center;
+    
+}
+.box{
+   
+    background-color: #eee;
+    opacity: 0.8;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: auto; 
+    /* wysrodkowanie tekstu na calym rectangle */
+    display: grid;
+    align-content: center;
+    
+}
+.box h3{
+    margin: 0 0 40px;
+    padding: 0;
+    color: #f7497d;
+    text-transform: uppercase;
+}
+.box input{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.box form div label{
+    text-align: center;
+    color: #656565;
+    transition: .5s;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.main-news-container{
+    max-width: 1400px;
+    margin: auto;
+}
+.newsletter-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    grid-template-areas: 
+        "cliNewsletter cliSaveNews cliSaveNews"
+    
+}
+.newsletter{
+    grid-area: cliNewsletter;
+
+    text-align: center;
+    font-size: 24px;
+    color: #656565;
+}
+.newsletter span, .fa-envelope{
+    padding-right: 5px; 
+    font-size: 32px;
+    text-align: center;
+}
+
+.save-newsletter{
+    grid-area: cliSaveNews;
+    text-align: center;
+    
+    display: grid;
+    align-content: center;
+    margin: auto;
+}
+.sign-up-container{
+    width: 55vw;
+    height: 10rem;
+    background-color: #cafce3;
+    display: grid;
+    align-content: center;
+}
+.enter-text-news{
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    margin: 25px;
+    color: #656565;
+    opacity: 0.6;
+    border: 2px solid #65bde8;
+}
+.btn-save{
+    width: 6rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: #80f5bb;
+    color: #656565;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.footer{
+    display: grid;
+    margin:auto;
+
+    grid-template-columns: 
+    minmax(20px,300px)
+    minmax(20px,300px)
+    minmax(20px,300px)
+    minmax(20px,400px);
+    justify-content: center;
+    grid-template-rows: 1fr;
+    background-color: #ffeee3;
+    color: #000;
+}
+.footer > div{
+    padding: 20px;
+    text-align: center;
+    line-height: 2rem;
+
+}
+.foot2{
+    text-align: center;
+    grid-column: 2/4;
+}
+.social-footer.fa-ul{
+    margin-right: 2.5em;
+}
+
+.copyright{
+    display: grid;
+    margin:auto;
+
+    grid-template-columns: 
+    minmax(20px,300px)
+    minmax(20px,300px)
+    minmax(20px,300px)
+    minmax(20px,300px);
+    justify-content: center;
+    grid-template-rows: 1fr;
+    background-color: #ffeee3;
+    color: #656565;
+    margin-top: 5px;
+}
+.logo-footer{
+    margin: 5px 0 5px 0;
+}
+.copy{
+    text-align: center;
+    grid-column: 2/4;
+}
+.copy p{
+    margin:0;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.sticky-btn{
+    position:-webkit-sticky; position:sticky; top:0;
+    top: 50%;
+}
+.scrollup {
+    position: absolute;
+    right:0;
+    background-color: #ffa794;
+    color: #656565;
+    box-shadow:-1px 2px 5px -1px rgba(0,0,0,0.5);
+
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+    display: grid;
+    align-content: center;
+
+    opacity: 0.56;
+
+}
+.scrollup:hover{
+    opacity: 1;
+    color: #656565;
+}
+
+@media (min-width: 1400px){
+    .logo{
+        padding-left: 60px;
+    }
+    .nav-items{
+        padding-right: 140px;
+        padding-top: 8px;
+    }
+}
+@media(max-width: 1300px){
+    .sign-up-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3,1fr);
+        grid-column: 1/3;
+        height: 20rem;
+    }
+    #sign-up{
+        grid-column: 2/3;
+    }
+}
+@media (max-width: 1200px){
+    
+    .sub-all{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sub1{
+        min-height: 25vw;
+    }
+    .sub2{
+        min-height: 25vw;
+    }
+    .sub3{
+        min-height: 25vw;
+    }
+}
+/* TABLET MEDIA QUERY */
+@media (max-width: 950px){
+    .wrapper {
+        grid-template-areas: 
+        "titleOffer titleOffer titleOffer"
+
+        "featuredSub featuredSub featuredSub"
+        "contentMain contentMain contentMain"
+
+        "headingMaps headingMaps headingMaps" 
+        "contentMaps contentMaps contentMaps"
+        "clientsOpinion clientsOpinion clientsOpinion"
+
+
+    }
+    .newsletter-container{
+        
+        grid-template-areas: 
+        "cliNewsletter cliNewsletter cliNewsletter"
+        "cliSaveNews cliSaveNews cliSaveNews"        
+    }
+    .main-content{
+        grid-template-columns: 1fr; /*ułożenie pod sobą (pionowo)*/
+    }
+    .sub-all{
+        grid-template-columns: 1fr;
+        margin: auto; 
+    }
+    .sub1, .sub2, .sub3{
+        min-height: 40vw;
+    }
+    .clients-opinion { /*Zdjęcia klientow - ustawienie pod sobą, czyli pionowo*/
+        grid-template-columns: 1fr;
+    }
+    .clients-opinion h3{ /*Sam napis - jedno pod drugim, czyli pionowo */
+        display: grid;
+        grid-column: 1/-1;
+
+    }
+    .client-opinion {
+        width: 23%;
+    }    
+    .clie2{
+        margin-top: 35px;
+    }
+    .logo{
+        grid-column: 1/5;
+        text-align: center; 
+    }    
+    .nav-wrapper{
+        margin-top: 0;
+    }
+    .sign-up-container{
+       
+        width: 75vw;
+        height: 20rem;
+    }
+    
+    
+}
+
+/* MOBILE MEDIA QUERY */
+@media (max-width: 690px){
+    .nav-items{
+        grid-column: 1/5;
+        text-align: center;
+    }
+    .nav-wrapper ul{
+        padding: 0;
+        margin: 0;
+    }
+    .nav-wrapper ul li{
+        display: block;   
+    }
+    .burger-icon{
+        display: inline-block;
+        justify-self: end;
+        grid-column: 4/5;
+        border: 2px solid #333;
+        color: #333;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .burger-icon:hover{
+        cursor: pointer;
+    }
+    .wrapper{
+        grid-template-areas:
+        "titleOffer titleOffer titleOffer"
+
+        "featuredSub featuredSub featuredSub" 
+        "contentMain contentMain contentMain"
+        "contentSub contentSub contentSub"
+
+        "headingMaps headingMaps headingMaps" 
+        "contentMaps contentMaps contentMaps"
+        "clientsOpinion clientsOpinion clientsOpinion"
+
+    }
+    .featured #hero-date{
+        bottom: 30px;
+    }
+    .place-star {
+        padding-left: 3.2rem;
+        margin: 3px;
+    }
+    .star{
+        height: 3vw;
+    }
+     
+    .offers img{
+        width: 100vw;
+        height: auto;
+    }
+    .left-content{
+        grid-column: 1/-1; /*jedno pod drugim, czyli pionowo*/
+    }
+    .main-sidebar {
+        grid-column: 1/-1;
+    }
+    .maps-frame{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 250px;
+    }
+    .newsletter-container{
+        grid-template-areas: 
+        "cliNewsletter cliNewsletter cliNewsletter"
+        "cliSaveNews cliSaveNews cliSaveNews"        
+    }
+    .sub-all{
+        grid-template-columns: 1fr; /*ustawienie pod sobą, czyli pionowo*/
+    }
+    .client-img{
+        width: 20rem;
+        height: 21rem;
+    }
+    .client-opinion{
+        width: 34%;
+        margin-top: -11rem;
+    }
+    .clie2{
+        margin-top: 4rem;
+    }
+    .sub1, .sub2, .sub3{
+        min-height: 50vw;
+    }
+
+    /*zpisz się*/
+    .sign-up-container {
+        width: 100%;
+        height: 20rem;
+    }
+    /*newsletter textbox*/
+    .enter-text-news{
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .footer > div {
+        grid-column: 1/-1; /*jedno pod drugim, czyli pionowo*/
+    }
+    .copyright > div {
+        grid-column: 1/-1; /*jedno pod drugim, czyli pionowo*/
+        text-align: center;
+
+    }
+    .featured h1{
+        font-size: 30px;
+    }
+    .mobile-show{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }    
+}
+
+@media(max-width: 480px){
+    .client-opinion {
+        width: 47%;
+    } 
+    .info-all{
+        font-size: 18px;
+    } 
+}
+@media(max-width: 360px){
+    .featured h1 {
+        font-size: 24px;
+    }
+    .client-opinion {
+        width: 53%;
+        font-size: 15px;
+
+    }
+    .info-all{
+        font-size: 18px;
+    } 
+}

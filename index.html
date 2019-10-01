@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Normalize css cdn-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Travel Agency</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fon-awesome -->
+    <script src="https://kit.fontawesome.com/01912287bb.js"></script>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <!-- jQuery-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <!--javascript--><!-- odnosnik do pliku js -->
+
+    <script src="js/app.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <!--MAPS google-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+<body>
+    <main class="main-container">
+        <!-- strona przewijana do góry -->
+        <div class="sticky-btn"> 
+            <a href="#" class="scrollup"> View Top</a> 
+        </div>
+ 
+        
+        <nav class="nav-wrapper" id="menu">
+            <div class="logo">
+                <object data="img/logo.svg" type="image/svg+xml">logo.svg</object>
+            </div>
+
+            <div class="burger-icon">
+                <i class="fas fa-bars"></i> MENU
+            </div>
+            
+            <ul class="nav-items main-nav mobile-hide">
+                <li class="list-items"><a href="index.html" class="highlighted" >Home</a> </li>
+                <li class="list-items"><a href="#offer-title" id="view-offers"> Offers</a></li>
+                <li class="list-items"><a href="#application-form" id="view-form">Form</a></li>
+                <li class="list-items"><a href="#">Price list</a></li>
+                <li class="list-items"><a href="#contact " id="view-contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+        <!--END NAV-->
+        <section class="slider">
+                <div class="featured">
+                        <div class="meta">Author ThePioter18</div>
+                        <h1>Nasza firma pomoże Ci z podróżą</h1>
+                        <div> 
+                            <a href="#offer-title" id="see-more"><button class="border-btn"> Zobacz więcej</button></a>
+
+                        </div>
+                        
+                        <span id="hero-date">September 15, 2019</span>
+                </div>
+        </section>
+        
+        <div class="main-wrapper">
+            
+            <div class="wrapper">
+
+                <div class="offer-title" id="offer-title">
+                    <div class="title">
+                            <h3>Popularne oferty</h3>
+                    
+                    </div>
+                    <div class="btn-more-offers">
+                            <button class="border-btn">Więcej ofert</button>
+                    </div>   
+                    
+                </div>
+
+
+            <div class="sub-all">
+
+                <div class="offer1"  id="offer1">   
+                    <div class="sub-featured">
+                        <div class="offers" id="offer1"> 
+                                    <ul class="name-star">
+                                            <li class="name">
+                                                    Egipt - <span>3,000 zł</span>
+                                            </li>
+                                            <div class="place-star">
+                                                    <li class="star">
+                                                        <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                            star
+                                                        </object>
+                                                            </li>    
+                                                    <li class="star">
+                                                        <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                            star
+                                                        </object>
+                                                    </li>
+                                                    <li class="star">
+                                                        <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                            star
+                                                        </object>
+                                                    </li>
+                                                    <li class="star">
+                                                        <object data="./img/star.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                            star
+                                                        </object>
+                                                    </li>
+                                                    <li class="star">
+                                                        <object data="./img/star.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                            star
+                                                        </object>
+                                                    </li>    
+                                            </div>
+                                    </ul>
+                                    <div class="sub1">
+                                        <h3>Something Great</h3>
+            
+                                    </div>
+                                    <div class="img-desc">
+                
+                                            <span>Państwo położone w północno-wschodniej Afryce z półwyspem Synaj z zachodniej Azji.</span>
+                
+                                    </div>
+                                    
+                            </div>
+                            
+                    </div>
+                    <div class="p-frame-btn" >
+                            <button class="border-btn">
+                                    Zamów
+                            </button>
+                    </div>
+                </div>
+                <div class="offer2"  id="offer2">   
+                        <div class="sub-featured">
+                            <div class="offers" id="offer2">
+                                        <ul class="name-star">
+                                                <li class="name">
+                                                        Paryż - <span>1,500 zł</span>
+                                                </li>
+                                                <div class="place-star">
+                                                        <li class="star">
+                                                            <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                star
+                                                            </object>
+                                                                </li>    
+                                                        <li class="star">
+                                                            <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                star
+                                                            </object>
+                                                        </li>
+                                                        <li class="star">
+                                                            <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                star
+                                                            </object>
+                                                        </li>
+                                                        <li class="star">
+                                                            <object data="./img/star.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                star
+                                                            </object>
+                                                        </li>
+                                                        <li class="star">
+                                                            <object data="./img/star.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                star
+                                                            </object>
+                                                        </li>    
+                                                </div>
+                                        </ul>
+                                        <div class="sub2">
+                                            <h3>This Couldn't Be Better</h3>
+                                        </div>
+                                        <div class="img-desc">
+                    
+                                                <span>Paryż - stolica i największe miasto Francji, położone w centrum Basenu Paryskiego, nad Sekwaną.</span>
+
+                                        </div>
+                                        
+                                </div>
+                                
+                        </div>
+                        <div class="p-frame-btn" >
+                                <button class="border-btn">
+                                        Zamów
+                                </button>
+                        </div>
+                </div>
+                <div class="offer3"  id="offer3">   
+                            <div class="sub-featured">
+                                <div class="offers" id="offer3">
+                                            <ul class="name-star">
+                                                    <li class="name">
+                                                        Australia - <span>3,500 zł</span>
+                                                    </li>
+                                                    <div class="place-star">
+                                                            <li class="star">
+                                                                <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                    star
+                                                                </object>
+                                                                    </li>    
+                                                            <li class="star">
+                                                                <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                    star
+                                                                </object>
+                                                            </li>
+                                                            <li class="star">
+                                                                <object data="./img/star-color.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                    star
+                                                                </object>
+                                                            </li>
+                                                            <li class="star">
+                                                                <object data="./img/star.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                    star
+                                                                </object>
+                                                            </li>
+                                                            <li class="star">
+                                                                <object data="./img/star.svg" type="image/svg+xml" style="height:1.2rem;">
+                                                                    star
+                                                                </object>
+                                                            </li>    
+                                                    </div>
+                                            </ul>
+                                            <div class="sub3">
+                                                <h3>Interesting Continent</h3>
+                                            </div>
+                                            <div class="img-desc">
+                        
+                                                    <span>Stolica kraju Canberra, największym miastem jest Sydney. Jest szóstym pod względem powierzchni państwem świata.</span>
+                        
+                                            </div>
+                                            
+                                    </div>
+                                    
+                            </div>
+                            <div class="p-frame-btn" >
+                                    <button class="border-btn">
+                                            Zamów
+                                    </button>
+                            </div>
+                </div>
+
+            </div>    
+
+                <div class="main-content">
+                    <div class="left-content">
+                            <h3>Funkcionujemy na rynku już 10 lat!</h3>
+                    
+                            <p>
+                                    TravelAgency organizuje wczasy zagraniczne</br>
+                                    i wycieczki objazdowe samolotem i autokarem. </br>
+                                    Jesteśmy wstanie zaoferować atrakcyjne miejsca.</br>
+                                    Sprawdź oferty: Wakacje, Egzotyka, Last Minute!</br>
+                            </p>    
+                            <div class="btn-offers">
+                                <button class="border-btn">Oferty</button>
+
+                            </div>
+                    </div> 
+                    
+                    
+                    <div class="main-sidebar">
+                            <div class="email-digest-subscription">
+                                <h2>Nasze biuro mieści się w atrakcyjnej lokalizacji</h2>                            
+                                <p>
+                                    <iframe class="maps-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.730806033545!2d21.000498415796663!3d52.23010837976024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8da58f0dd5%3A0x9f7d3a9040fbc02f!2sZ%C5%82ota%2059%2C%2000-120%20Warszawa!5e0!3m2!1spl!2spl!4v1569502963069!5m2!1spl!2spl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></br>
+                                    Centrum handlowe w Warszawie Złote Tarasy </br>
+                                    Adres: Złota 59, 00-120 Warszawa </br>
+                                    Zapraszamy do biura! </brs>
+                                </p>
+            
+                            </div>
+                    </div>
+                <!--end main content-->    
+                </div>
+
+                
+                <!--Text maps world-->
+                <div class="heading-maps">
+                    <h3>Znajdziemy dla <span>Ciebie</span> każde miejsce :) </h3>
+                </div>
+                <!--Opacity maps world-->
+                <div class="opacity-maps">  </div>
+
+                <!--Maps world-->
+                <div class="main-maps">  </div>
+            
+                <!--Clients opinion-->
+                <div class="clients-opinion">
+                        <h3>Nasi Klienci i ich opinie</h3>
+                        <div class="clie1">
+                            <img src="./img/client1.png" alt="Client 1" class="client-img">
+
+
+                            <div class="client-opinion">
+                                    <p>
+                                        Cześć! Ostatnio korzystałam z oferty tej firmy.
+                                        Krótkomówiąc jestem zadowolona i na pewno polecam oferty z TravelAgency!
+                                    </p>
+                
+                                    <h4>Eva Doe</h4>
+                            </div>
+                            
+                        </div>
+                
+                        <div class="clie2">
+                            <img src="./img/client2.png" alt="Client 2" class="client-img">
+                            <div class="client-opinion">
+                                    <p>
+                                        Witam! Podobają mi się oferty z tej firmy.
+                                        Na następne wakacje, również skorzystam z polecanych ofert od TravelAgency!
+                                    </p>
+                
+                                    <h4>Michelle Foster</h4>
+                            </div>
+                        </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        
+        <!--Info all-->
+        <section class="info-all">
+            <p>Jeśli nasze gotowe ofert nie zadawalją Cię, masz problemy z zarezerwowaniem wycieczki, bądź masz </br>
+                do nas dodatkowe pytania. Skotaktuj się z nami wypełniając poniższy formularz.
+            </p>
+        </section>
+        <!--Contact us-->
+        <section class="slider-two" >
+            <div class="contact-us" id="application-form">
+                <div class="box">
+                        <h3>Skontaktuj się z nami</h3>
+                        <form action="">
+                            <div>
+                                    <label>Podaj imię</label></br></br>
+                                <input type="text" name="imię" placeholder="imię" required="">
+                            </div>
+                            <div>
+                                    <label>Podaj e-mail</label></br></br>
+                                <input type="email" name="e-mail" placeholder="e-mail" required="">
+                            </div>
+                            <div>
+                                    <label>Numer telefonu</label></br></br>
+                                <input type="number" name="telefon" placeholder="telefon" required="">
+                            </div>
+                            <div>
+                                    <label>Jaki kraj Cię interesuje?</label></br></br>
+                                <input type="text" name="wpisz kraj" placeholder="wpisz kraj" required="">
+                            </div>
+                            <div>
+                                    <label>Podaj liczbę osób podróżjących z Tobą</label></br></br>
+                                <input type="number" name="liczba osób" placeholder="liczba osób" required="">
+                            </div>
+                            <button class="border-btn" type="submit" name="" value="Wyślij">Wyślij</button>
+                        </form>
+                </div>
+            </div>
+        </section>
+        
+        <!--Newsletter-->
+        <div class="main-news-container">
+            <div class="newsletter-container">
+                <div class="newsletter">
+                    <p>Chcesz być na bieżąco </br>
+                        nowinkami z naszej strony? </br></br></br>
+                        <span><i class="far fa-envelope"></i></span> Zapisz się do newslettera!
+                    </p>
+                    
+                </div>
+                <div class="save-newsletter">
+                    <div class="sign-up-container">
+                            <form id="sign-up">
+                                    <input placeholder="Wpisz swoje imię" class="enter-text-news" name="name"
+                                    id="name" type="name">
+                                    <input placeholder="Wpisz adres e-mail" class="enter-text-news" name="email"
+                                    id="email" type="email">
+                                    <button name="button" class="btn-save">Zapisz się</button>
+                                </form>
+                    </div>                
+                    
+
+                </div>
+            </div>
+        </div>
+            
+
+        <footer class="footer" id="contact">
+            <div class="foot1">
+                <h3 class="contact">
+                    <span> <i class="fas fa-phone-alt"></i></span>  Kontakt z nami:
+                </h3>
+                <br/>
+                <p> tel. stacjonarny: 801 800 800 <br>
+                    tel. komórkowy: 606 321 777 <br>
+                    email: travelagency@gmail.com <br>
+                    biuro czynne: <br>
+                    8-22 pon-pt <br>
+                    9-20 sob-nd <br>
+                    Złota 5 <br>
+                    00-120 Warszawa</p>
+                <br/>
+            </div>
+            
+            <div class="foot2">
+                <h3 class="contact">Więcej o podróżach w naszych social media</h3>            
+                <br/>
+
+                <ul class="fa-ul social-footer">
+                        <li><span style="
+                            margin: 8px;
+                        "><i class="fab fa-facebook-square"></i></span>Facebook</li>
+                        <li><span style="
+                            margin: 8px;
+                        "><i class="fab fa-instagram"></i></span>Instagram</li>
+                        <li><span style="
+                            margin-right: 10px;
+                        "><i class="fab fa-youtube"></i></span>YouTube</li>
+                </ul>
+            </div>
+            <div class="foot3">
+                    <h3 class="contact">Obsługujemy płatności:</h3>
+                    <br/>
+
+                    <ul class="fa-ul social-footer">
+                        <li><span style="
+                            margin: 8px;
+                        "><i class="fas fa-check-square"></i></span>Przelewy24</li>
+                        <li><span style="
+                            margin: 8px;
+                        "><i class="fas fa-check-square"></i></span>MasterCard</li>
+                        <li><span style="
+                            margin-right: 8px;
+                        "><i class="fas fa-spinner fa-pulse"></i></span>Visa</li>
+                    </ul>
+            </div>
+
+    
+        </footer>
+        <div class="copyright">
+                <div class="logo-footer">
+                    <object data="img/logo.svg" type="image/svg+xml">logo.svg</object>
+                </div>
+                <div class="copy">
+                    <p>  Copyright Biuro podróży TravelAgency 2019  </p>
+
+                </div>
+            
+        </div>
+    
+
+
+    </main>  
+
+</body>
+</html>
