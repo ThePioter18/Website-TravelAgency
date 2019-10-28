@@ -76,7 +76,7 @@ body{
     grid-area: featuredMain;
     min-height: 43vw;
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
-    border-box, url(/img/camper.jpg) no-repeat center center;
+    border-box, url(../img/camper.jpg) no-repeat center center;
     background-size: cover;
 
     display: grid;
@@ -132,7 +132,7 @@ body{
 }
 .sub1{
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
-    border-box, url(/img/Egypt.jpg) no-repeat center center;
+    border-box, url(../img/Egypt.jpg) no-repeat center center;
     background-size: 100% 100%;
 
     min-height: 16vw;
@@ -140,14 +140,14 @@ body{
 }
 .sub2{
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
-    border-box, url(/img/eiffel-tower.jpg) no-repeat center center;
+    border-box, url(../img/eiffel-tower.jpg) no-repeat center center;
     background-size: 100% 100%;
     min-height: 16vw;
     margin-top: 15px;
 }
 .sub3{
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
-    border-box, url(/img/opera-house.jpg) no-repeat center center;
+    border-box, url(../img/opera-house.jpg) no-repeat center center;
     background-size: 100% 100%;
     min-height: 16vw;
     margin-top: 15px;
@@ -275,7 +275,7 @@ body{
 
     min-height: 30vw;
     
-    background: url(/img/continents.png) no-repeat center center;
+    background: url(../img/continents.png) no-repeat center center;
     background-size: 100% 100%;
 
 }
@@ -320,7 +320,7 @@ body{
     min-height: 47vw;
     
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.1))
-    border-box, url(/img/sea-1337565_1920.jpg) no-repeat center center;
+    border-box, url(../img/sea-1337565_1920.jpg) no-repeat center center;
     background-size: cover;
 
     text-align: center;
